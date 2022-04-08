@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/draw_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_online_pay"
+            android:icon="@drawable/draw_receipt"
+            android:title="Online Payment" />
+        <item
+            android:id="@+id/nav_banking"
+            android:icon="@drawable/draw_banking"
+            android:title="Banking Info" />
+        <item
+            android:id="@+id/nav_address"
+            android:icon="@drawable/draw_store"
+            android:title="Update Store Image" />
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/draw_password"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/draw_contact_us"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/draw_account"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_terms_use"
+            android:icon="@drawable/draw_terms"
+            android:title="Terms of Use" />
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/draw_privacy"
+            android:title="Privacy Policy" />
+        <item
+            android:id="@+id/nav_rate_us"
+            android:icon="@drawable/draw_rate"
+            android:title="Rate Us" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/draw_share"
+            android:title="Share app" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/draw_logout"
+            android:title="Logout" />
+
+    </group>
+
+</menu>

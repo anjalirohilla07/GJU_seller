@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".drawer_classes.UpdateStoreImage"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Store Image :- "
+        android:paddingLeft="20dp"
+        android:textColor="@color/lightSkyblue"
+        android:fontFamily="@font/poppinsregular"
+        android:textSize="15sp"
+        />
+    <ImageView
+        android:id="@+id/choose_image_update"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:padding="15dp"
+        android:src="@drawable/image_store"
+        android:background="@drawable/image_bg"
+        />
+
+    <Button
+        android:id="@+id/update_store_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upadte Store Image"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btnback"
+        android:padding="10dp"
+        android:textSize="17dp"
+        />
+
+</LinearLayout>

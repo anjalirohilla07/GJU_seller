@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Zapzoo_seller" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/skyblue</item>
+
+        <!-- Status bar color. -->
+       <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryDark</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="EditTextThemeOverlay" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/lightSkyblue</item>
+    </style>
+    <style name="TabTextStyle">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/poppinsregular</item>
+    </style>
+
+    <style name="ThemeOverlay.AppCompat.navTheme">
+        <!-- Color of text and icon when SELECTED -->
+      <item name="colorPrimary">@color/lightSkyblue</item>
+
+        <!-- Background color when SELECTED -->
+        <item name="colorControlHighlight">@color/llightBlack</item>
+
+    </style>
+</resources>

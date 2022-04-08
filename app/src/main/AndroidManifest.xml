@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zapzoo_seller">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Zapzoo_seller">
+        <activity android:name=".CreateProductActivity"></activity>
+        <activity android:name=".AddProductActivity" />
+        <activity android:name=".OrderDetailActivity" />
+        <activity android:name=".ProductDetailsActivity" />
+        <activity android:name=".drawer_classes.PrivacyPolicy" />
+        <activity android:name=".drawer_classes.TermsofUse" />
+        <activity android:name=".drawer_classes.AboutUs" />
+        <activity android:name=".drawer_classes.ContactUs" />
+        <activity android:name=".drawer_classes.UpdateStoreImage" />
+        <activity android:name=".drawer_classes.BankingInfo" />
+        <activity android:name=".drawer_classes.OnlinePayment" />
+        <activity android:name=".drawer_classes.MinOrder" />
+        <activity android:name=".drawer_classes.PreviousOrder" />
+        <activity android:name=".drawer_classes.ChangePassword" />
+        <activity android:name=".ForgetPassword" />
+
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".signup"
+            android:screenOrientation="locked"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".login"
+            android:screenOrientation="locked"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".splash_screen"
+            android:screenOrientation="locked"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDRCGBRvBGqQ6pETm1CqLaAailGfD9O2ww" />
+    </application>
+
+</manifest>

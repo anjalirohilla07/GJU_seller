@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">GJU STORE Owner</string>
+
+    <string name="ss_heading">GJU STORE</string>
+    <string name="ss_tagline">Simplifying your nearby shopping</string>
+    <string name="ss_sellerline">"Owner's Login"</string>
+
+    <string name="become_owner"><u>Become Owner!</u></string>
+    <string name="locate_map"><u>Click Here to locate store on map</u></string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="contact_us">For any query or help your can contact us through Email or can Call us at given number.</string>
+    <string name="about_us">GJU STORE is an online grocery delivery service where consumers can head over to buy essential household items from nearby retailers. The platform does not sell groceries directly to the customers but instead, connects offline retailers with online buyers. The GJU STORE is an online-to-offline (O2O) marketplace under which it will source grocery items from nearby merchants, instead of procuring from a native warehouses.</string>
+    <string name="created_by">Developed By :-\n1. Shreyansh Shrivastava.\n2. Shubham Singh.\n3. Sourabh Sharma.\n4. Vineet Jain.</string>
+    <string name="terms_of_use">1. We don\'t own any inventory. All the inventory is owned and managed by the respective store owners. \n\n2. All the deliveries are taken care by respective store owners. We don\'t own any responsibility of delay or late deliveries. However we will ensure that your feedback reaches to respective store owners.\n\n3. Kindly note that if you are paying online there will be charges levied by payment gateway service provider.\n\n4. As much as possible we ensure all stores are physically verified for their goods quality, prompt delivery before on boarding, we don\'t take any responsibility for misplacing the items in a order, wrong orders or poor quality of the shipped material.\n\n5. Store owners are required to enroll their bank account details in the app by themselves to ensure smooth settlement of the online payments. No other means are entertained.\n\n<b>**The terms and conditions are subject to change without any prior notice.</b></string>
+    <string name="privacy_policy">We ensure that all registered users and merchant details are preserved in our secure servers protecting your privacy. However these details will be used by the company for internal use to determine the preferences of application users, monitor the fraud and improve the service quality. Kindly note the policy is subject to change at any time without any prior notice.</string>
+</resources>

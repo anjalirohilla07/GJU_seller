@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    tools:openDrawer="start">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/lightSkyblue"
+                android:gravity="center"
+                android:minHeight="?attr/actionBarSize"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:titleTextColor="#ffffff">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/addProductBtn"
+                        android:layout_width="130dp"
+                        android:layout_height="35dp"
+                        android:padding="5dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Add Products"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/lightSkyblue"
+                        android:fontFamily="@font/lemonmilklight"
+                        android:background="@drawable/change_store_bg"/>
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                app:tabGravity="center"
+                app:tabIndicatorAnimationDuration="600"
+                app:tabIndicatorColor="@color/colorPrimary"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="scrollable"
+                app:tabRippleColor="@color/lightSkyblue"
+                app:tabTextAppearance="@style/TabTextStyle"
+                app:tabTextColor="@color/black"
+                app:tabPaddingTop="10dp"
+                android:elevation="10dp"
+                app:tabUnboundedRipple="true"
+                app:tabSelectedTextColor="@color/lightSkyblue"
+                >
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/ti1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Received"
+                    android:icon="@drawable/ic_received_one"
+                    />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/ti2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accepted"
+                    android:icon="@drawable/ic_accept"
+                    />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/ti3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Done"
+                    android:icon="@drawable/ic_wallet"
+                    />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/ti4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In Progress"
+                    android:icon="@drawable/ic_moving"
+                    />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/ti5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All Orders"
+                    android:icon="@drawable/ic_box"
+                    />
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tablayout"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:itemIconTint="@color/lightSkyblue"
+        android:theme="@style/ThemeOverlay.AppCompat.navTheme"
+        app:menu="@menu/main_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

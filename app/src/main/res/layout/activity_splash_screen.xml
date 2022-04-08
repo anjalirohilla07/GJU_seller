@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splash_screen"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/ssImage"
+        android:transitionName="logo_name"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/icontranparent"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/ssText"
+        android:transitionName="logo_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ssImage"
+        android:layout_marginTop="-15dp"
+        android:text="@string/ss_heading"
+        android:textAlignment="center"
+        android:fontFamily="@font/lemonmilklight"
+        android:textSize="25sp"
+        android:textColor="@color/lightSkyblue"
+        />
+
+    <TextView
+        android:id="@+id/ssText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ssText"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ss_tagline"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/lightSkyblue"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/ssText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ssText2"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:text="@string/ss_sellerline"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/lightSkyblue"
+        android:layout_marginTop="40dp"
+        android:textSize="15dp"
+        />
+
+</RelativeLayout>
